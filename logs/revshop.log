@@ -1,0 +1,161 @@
+2026-02-01 16:22:36 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-01 17:10:26 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-01 17:10:52 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 23 attempting to add product 1 to cart
+2026-02-01 17:10:52 [WARN] service.Impl.BuyerProductServiceImpl - Cannot add to cart. Product not found: 1
+2026-02-01 22:14:14 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-01 22:23:06 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 24 attempting to add product 2 to cart
+2026-02-01 22:23:07 [ERROR] Dao.Impl.BuyerProductDaoImpl - Database error while <doing action>
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("REVSHOP1"."FAVOURITES"."FAVOURITE_ID")
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:629) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:563) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1230) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:298) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:511) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:162) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1240) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1819) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1471) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3760) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4061) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4036) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:995) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at Dao.Impl.BuyerProductDaoImpl.addToFavourites(BuyerProductDaoImpl.java:176) [classes/:?]
+	at service.Impl.BuyerProductServiceImpl.addToFavourites(BuyerProductServiceImpl.java:46) [classes/:?]
+	at presentation.BuyerProductMenu.addToFavourites(BuyerProductMenu.java:182) [classes/:?]
+	at presentation.BuyerProductMenu.buyerMenu(BuyerProductMenu.java:128) [classes/:?]
+	at presentation.BuyerSellerregistration.login(BuyerSellerregistration.java:141) [classes/:?]
+	at Main.RevShopFile.main(RevShopFile.java:35) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01400: cannot insert NULL into ("REVSHOP1"."FAVOURITES"."FAVOURITE_ID")
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:636) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	... 19 more
+2026-02-01 22:23:45 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 24 attempting to add product 2 to cart
+2026-02-01 22:23:46 [ERROR] Dao.Impl.BuyerProductDaoImpl - Database error while <doing action>
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("REVSHOP1"."CART_ITEMS"."CART_ITEM_ID")
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:629) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:563) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1230) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:298) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:511) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:162) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1240) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1819) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1471) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3760) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4061) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4036) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:995) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	at Dao.Impl.BuyerProductDaoImpl.addToCart(BuyerProductDaoImpl.java:300) [classes/:?]
+	at service.Impl.BuyerProductServiceImpl.addToCart(BuyerProductServiceImpl.java:74) [classes/:?]
+	at presentation.BuyerProductMenu.addProductToCart(BuyerProductMenu.java:195) [classes/:?]
+	at presentation.BuyerProductMenu.buyerMenu(BuyerProductMenu.java:131) [classes/:?]
+	at presentation.BuyerSellerregistration.login(BuyerSellerregistration.java:141) [classes/:?]
+	at Main.RevShopFile.main(RevShopFile.java:35) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01400: cannot insert NULL into ("REVSHOP1"."CART_ITEMS"."CART_ITEM_ID")
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:636) ~[ojdbc11-21.9.0.0.jar:21.9.0.0.0]
+	... 19 more
+2026-02-01 22:23:46 [ERROR] service.Impl.BuyerProductServiceImpl - Failed to add product 2 to cart for buyer 24
+2026-02-01 23:15:02 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-02 09:52:06 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-02 09:53:40 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 2 attempting to add product 1 to cart
+2026-02-02 09:53:41 [INFO] service.Impl.BuyerProductServiceImpl - Product 1 added to cart successfully for buyer 2
+2026-02-02 09:54:15 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 2 requested quantity increase for product 1
+2026-02-02 09:54:15 [INFO] service.Impl.BuyerProductServiceImpl - Quantity increased for product 1 in buyer 2 cart
+2026-02-02 20:22:58 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-02 20:23:17 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 5 attempting to add product 2 to cart
+2026-02-02 20:23:17 [INFO] service.Impl.BuyerProductServiceImpl - Product 2 added to cart successfully for buyer 5
+2026-02-06 23:13:08 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-06 23:17:31 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 21 attempting to add product 1 to cart
+2026-02-06 23:17:47 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 21 attempting to add product 2 to cart
+2026-02-06 23:17:47 [INFO] service.Impl.BuyerProductServiceImpl - Product 2 added to cart successfully for buyer 21
+2026-02-06 23:19:02 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 21 requested quantity increase for product 1
+2026-02-06 23:19:02 [ERROR] service.Impl.BuyerProductServiceImpl - Failed to increase quantity for product 1 in buyer 21 cart
+2026-02-07 12:39:28 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-07 12:43:02 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 23 attempting to add product 21 to cart
+2026-02-07 12:43:03 [INFO] service.Impl.BuyerProductServiceImpl - Product 21 added to cart successfully for buyer 23
+2026-02-07 23:11:55 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-08 10:33:09 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to favourites
+2026-02-08 10:33:09 [INFO] service.Impl.BuyerProductServiceImpl - Product 1 added to favourites for buyer 10
+2026-02-08 10:33:09 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to favourites
+2026-02-08 10:33:09 [WARN] service.Impl.BuyerProductServiceImpl - Cannot add to favourites. Product not found: 1
+2026-02-08 10:33:09 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to cart
+2026-02-08 10:33:09 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-08 10:33:09 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to cart
+2026-02-08 10:33:09 [WARN] service.Impl.BuyerProductServiceImpl - Stock limit exceeded.
+2026-02-08 10:39:08 [INFO] service.Impl.OrderServiceImpl - Buyer 1 attempting to review product 10
+2026-02-08 10:39:08 [WARN] service.Impl.OrderServiceImpl - Review rejected. Buyer 1 has not purchased product 10
+2026-02-08 10:39:08 [INFO] service.Impl.OrderServiceImpl - Placing order for buyerId 1
+2026-02-08 10:39:08 [INFO] service.Impl.OrderServiceImpl - Payment added and order completed for orderId 101
+2026-02-08 10:39:08 [INFO] service.Impl.OrderServiceImpl - Placing order for buyerId 1
+2026-02-08 10:39:08 [ERROR] service.Impl.OrderServiceImpl - Order creation failed for buyerId 1
+2026-02-08 10:39:08 [INFO] service.Impl.OrderServiceImpl - Buyer 1 attempting to review product 10
+2026-02-08 10:39:08 [INFO] service.Impl.OrderServiceImpl - Review successfully submitted for product 10
+2026-02-08 10:43:50 [INFO] service.Impl.ProductServiceImpl - Fetching reviews for sellerId 10
+2026-02-08 10:43:50 [INFO] service.Impl.ProductServiceImpl - Updating product 1 for seller 10
+2026-02-08 10:43:50 [WARN] service.Impl.ProductServiceImpl - Product not found for seller. productId=1, sellerId=10
+2026-02-08 10:43:50 [INFO] service.Impl.ProductServiceImpl - Attempting to add product: Test Product
+2026-02-08 10:43:50 [ERROR] service.Impl.ProductServiceImpl - Selling price cannot be greater than MRP for product: Test Product
+2026-02-08 10:43:50 [INFO] service.Impl.ProductServiceImpl - Fetching all categories
+2026-02-08 10:43:50 [INFO] service.Impl.ProductServiceImpl - Updating product 1 for seller 10
+2026-02-08 10:43:50 [INFO] service.Impl.ProductServiceImpl - Product updated successfully. productId=1
+2026-02-08 10:43:51 [INFO] service.Impl.ProductServiceImpl - Attempting to add product: Test Product
+2026-02-08 10:43:51 [INFO] service.Impl.ProductServiceImpl - Product added successfully: Test Product
+2026-02-08 10:43:51 [INFO] service.Impl.ProductServiceImpl - Fetching all products for sellerId 1
+2026-02-08 10:43:51 [INFO] service.Impl.ProductServiceImpl - Deleting product with productId 1
+2026-02-08 10:43:51 [INFO] service.Impl.ProductServiceImpl - Product deleted successfully. productId=1
+2026-02-08 10:53:54 [INFO] service.Impl.ProductServiceImpl - Fetching reviews for sellerId 10
+2026-02-08 10:53:55 [INFO] service.Impl.ProductServiceImpl - Updating product 1 for seller 10
+2026-02-08 10:53:55 [WARN] service.Impl.ProductServiceImpl - Product not found for seller. productId=1, sellerId=10
+2026-02-08 10:53:55 [INFO] service.Impl.ProductServiceImpl - Attempting to add product: Test Product
+2026-02-08 10:53:55 [ERROR] service.Impl.ProductServiceImpl - Selling price cannot be greater than MRP for product: Test Product
+2026-02-08 10:53:55 [INFO] service.Impl.ProductServiceImpl - Fetching all categories
+2026-02-08 10:53:55 [INFO] service.Impl.ProductServiceImpl - Updating product 1 for seller 10
+2026-02-08 10:53:55 [INFO] service.Impl.ProductServiceImpl - Product updated successfully. productId=1
+2026-02-08 10:53:55 [INFO] service.Impl.ProductServiceImpl - Attempting to add product: Test Product
+2026-02-08 10:53:56 [INFO] service.Impl.ProductServiceImpl - Product added successfully: Test Product
+2026-02-08 10:53:56 [INFO] service.Impl.ProductServiceImpl - Fetching all products for sellerId 1
+2026-02-08 10:53:56 [INFO] service.Impl.ProductServiceImpl - Deleting product with productId 1
+2026-02-08 10:53:56 [INFO] service.Impl.ProductServiceImpl - Product deleted successfully. productId=1
+2026-02-08 11:00:02 [INFO] service.Impl.RegistrationServiceImpl - Attempting buyer registration for email test@gmail.com
+2026-02-08 11:00:02 [INFO] service.Impl.RegistrationServiceImpl - Buyer registered successfully: test@gmail.com
+2026-02-08 11:00:02 [INFO] service.Impl.RegistrationServiceImpl - Login attempt for email test@gmail.com
+2026-02-08 11:00:02 [INFO] service.Impl.RegistrationServiceImpl - Login successful for userId 1
+2026-02-08 11:00:02 [INFO] service.Impl.RegistrationServiceImpl - Login attempt for email test@gmail.com
+2026-02-08 11:00:02 [WARN] service.Impl.RegistrationServiceImpl - Incorrect password attempt for email test@gmail.com
+2026-02-08 11:00:02 [INFO] service.Impl.RegistrationServiceImpl - Attempting buyer registration for email invalidemail
+2026-02-08 11:00:02 [WARN] service.Impl.RegistrationServiceImpl - Invalid email provided for buyer registration
+2026-02-08 15:09:08 [INFO] service.Impl.RegistrationServiceImpl - Fetching all security questions
+2026-02-08 15:09:50 [INFO] service.Impl.RegistrationServiceImpl - Attempting buyer registration for email Prashu@gmail.com
+2026-02-08 15:09:51 [INFO] service.Impl.RegistrationServiceImpl - Buyer registered successfully: Prashu@gmail.com
+2026-02-08 15:10:09 [INFO] service.Impl.RegistrationServiceImpl - Login attempt for email Prashu@gmail.com
+2026-02-08 15:10:09 [INFO] service.Impl.RegistrationServiceImpl - Login successful for userId 25
+2026-02-08 15:10:20 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-08 15:11:31 [INFO] service.Impl.RegistrationServiceImpl - Fetching all security questions
+2026-02-08 15:13:40 [INFO] service.Impl.RegistrationServiceImpl - Attempting seller registration for email Seller2@gmail.com
+2026-02-08 15:13:40 [INFO] service.Impl.RegistrationServiceImpl - Seller registered successfully: Seller2@gmail.com
+2026-02-08 15:14:00 [INFO] service.Impl.RegistrationServiceImpl - Login attempt for email Seller2@gmail.com
+2026-02-08 15:14:00 [INFO] service.Impl.RegistrationServiceImpl - Login successful for userId 26
+2026-02-08 15:14:11 [INFO] service.Impl.ProductServiceImpl - Fetching all products for sellerId 26
+2026-02-08 15:14:16 [INFO] service.Impl.ProductServiceImpl - Fetching all categories
+2026-02-08 15:15:11 [INFO] service.Impl.ProductServiceImpl - Attempting to add product: Prestige Cooker
+2026-02-08 15:15:11 [INFO] service.Impl.ProductServiceImpl - Product added successfully: Prestige Cooker
+2026-02-08 15:15:38 [INFO] service.Impl.ProductServiceImpl - Fetching all products for sellerId 26
+2026-02-08 15:15:44 [INFO] service.Impl.ProductServiceImpl - Fetching all products for sellerId 26
+2026-02-08 15:15:53 [INFO] service.Impl.ProductServiceImpl - Deleting product with productId 24
+2026-02-08 15:15:53 [INFO] service.Impl.ProductServiceImpl - Product deleted successfully. productId=24
+2026-02-08 15:16:13 [INFO] service.Impl.RegistrationServiceImpl - Login attempt for email Prashu@gmail.com
+2026-02-08 15:16:13 [INFO] service.Impl.RegistrationServiceImpl - Login successful for userId 25
+2026-02-08 15:16:27 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-08 15:17:12 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to favourites
+2026-02-08 15:17:12 [INFO] service.Impl.BuyerProductServiceImpl - Product 1 added to favourites for buyer 10
+2026-02-08 15:17:12 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to favourites
+2026-02-08 15:17:12 [WARN] service.Impl.BuyerProductServiceImpl - Cannot add to favourites. Product not found: 1
+2026-02-08 15:17:12 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to cart
+2026-02-08 15:17:12 [INFO] service.Impl.BuyerProductServiceImpl - Buyer requested to view all products
+2026-02-08 15:17:12 [INFO] service.Impl.BuyerProductServiceImpl - Buyer 10 attempting to add product 1 to cart
+2026-02-08 15:17:12 [WARN] service.Impl.BuyerProductServiceImpl - Stock limit exceeded.
