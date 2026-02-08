@@ -1,4 +1,4 @@
-<img width="8191" height="4108" alt="Entity Relationship diagram" src="https://github.com/user-attachments/assets/5e5a7ade-889c-4fb8-9706-98fd07c7a3f0" />🛒 RevShop - Enterprise Console-Based E-Commerce Application
+🛒 RevShop - Enterprise Console-Based E-Commerce Application
 
 RevShop is a secure, console-based Java e-commerce application designed for both buyers and sellers. It follows a layered N-Tier architecture and demonstrates enterprise-level software design using Java, JDBC, Oracle SQL, Log4J, JUnit, and Git.
 
