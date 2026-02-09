@@ -177,7 +177,8 @@ Notifications: Receive in-app notifications when orders are placed.
 **Review Monitoring:** View buyer reviews and ratings for their products.
 
 **Notifications:** Receive alerts when buyers place new orders.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ✨ Enterprise Features
 
 🚀 Transactional Integrity: Critical operations like order placement and inventory updates use atomic JDBC transactions to prevent data inconsistency.
