@@ -141,6 +141,7 @@ revshop/
 ```
 
 🔄 Working Flow
+
 1️⃣ Initialization & Authentication
 
 App Start: RevShopFile initializes the database connection using JDBC and loads the main console menu.
