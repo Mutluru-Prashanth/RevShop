@@ -161,13 +161,22 @@ Notifications: Receive in-app notifications when orders are placed.
 
 3️⃣ Seller Workflow (The Vendor)
 
-Seller Registration: Sellers register with email, password, and business details.
-Product Management: Add, update, and delete products using ProductService.
-Pricing Management: Set MRP and discounted price for products.
-Inventory Control: Monitor stock levels and receive console alerts when stock is low.
-Order Tracking: View all orders placed for their products.
-Review Monitoring: View buyer reviews and ratings for their products.
-Notifications: Receive alerts when buyers place new orders.
+### Seller Workflow (The Vendor)
+
+**Seller Registration:** Sellers register with email, password, and business details.
+
+**Product Management:** Add, update, and delete products using ProductService.
+
+**Pricing Management:** Set MRP and discounted price for products.
+
+**Inventory Control:** Monitor stock levels and receive console alerts when stock is low.
+
+**Order Tracking:** View all orders placed for their products.
+
+**Review Monitoring:** View buyer reviews and ratings for their products.
+
+**Notifications:** Receive alerts when buyers place new orders.
+
 =======================================================================================================================================================================================
 ✨ Enterprise Features
 
@@ -185,17 +194,21 @@ Notifications: Receive alerts when buyers place new orders.
 
 📜 Professional Logging: Integrated Log4J for logging application activities, errors, and debugging information.
 
-🧪 Unit Testing: Core business logic tested using JUnit test cases.
-=======================================================================================================================================================================================
-🛠 Technology Stack
+## 🧪 Unit Testing
+Core business logic tested using JUnit test cases.
 
-Language: Java (Core Java & OOP)
-Database: Oracle SQL Developer (Relational Database)
-Persistence: JDBC (Java Database Connectivity)
-Testing: JUnit (Unit Testing Framework)
-Build System: Maven
-Logging: Apache Log4J
-Version Control: Git
+---
+
+## 🛠 Technology Stack
+
+- **Language:** Java (Core Java & OOP)
+- **Database:** Oracle SQL Developer (Relational Database)
+- **Persistence:** JDBC (Java Database Connectivity)
+- **Testing:** JUnit (Unit Testing Framework)
+- **Build System:** Maven
+- **Logging:** Apache Log4J
+- **Version Control:** Git
+
 =======================================================================================================================================================================================
 
 �📝 About the Creator
