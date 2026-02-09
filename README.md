@@ -4,12 +4,12 @@ RevShop is a secure, console-based Java e-commerce application designed for both
 
 The system supports product browsing, cart management, order processing, inventory control, and secure authentication with password recovery mechanisms.
 
-=======================================================================================================================================================================================
+
 
 📊 Entity Relationship Diagram (ERD): 
 <img width="8191" height="4108" alt="Entity Relationship diagram" src="https://github.com/user-attachments/assets/4ed2abb1-b081-4642-95a2-692f7c1724ce" />
 📌 The ERD represents core entities such as Buyers, Sellers, Products, Orders, Cart, Payments, Reviews, Categories, Notifications, and Security Questions along with primary keys and foreign key relationships.
-=======================================================================================================================================================================================
+
 
 🏛 Application Architecture (Layered / N-Tier Design)
 
